@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee" >
+
+    <!-- 标题 -->
+
+    <TextView
+        android:id="@+id/tv_find_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/find_attach_bg"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/find"
+        android:textSize="18sp" />
+
+    <!-- item  故事 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_find_story"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv_find_title"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/find_attach_bg" >
+
+        <ImageView
+            android:id="@+id/iv_find_story"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_launcher"
+            android:contentDescription="@string/find"
+            android:padding="3dp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_gone"
+            android:contentDescription="@string/find"
+            android:layout_marginRight="5dp"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tv_find_story"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:text="@string/story02"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_find_story"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/iv_find_story"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:text="@string/story01"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/imageView1"
+            android:background="@drawable/ic_launcher"
+            android:contentDescription="@string/find"
+            android:padding="3dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+    <!-- item 值得买worth -->
+
+    <RelativeLayout
+        android:id="@+id/rl_find_worth"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rl_find_story"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/find_attach_bg" >
+
+        <ImageView
+            android:id="@+id/iv_find_worth"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_launcher"
+            android:contentDescription="@string/find"
+            android:padding="3dp" />
+
+        <ImageView
+            android:id="@+id/iv_find_worth1"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_gone"
+            android:contentDescription="@string/find"
+            android:layout_marginRight="5dp"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/tv_find_worth"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/iv_find_worth"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:text="@string/worth01"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/tv_find_worth"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:text="@string/worth02"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/iv_find_worth1"
+            android:background="@drawable/ic_launcher"
+            android:contentDescription="@string/find"
+            android:padding="3dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+    <!-- 逛逛 stroll -->
+    <RelativeLayout
+        android:id="@+id/rl_find_stroll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rl_find_worth"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/find_attach_bg" >
+
+        <ImageView
+            android:id="@+id/iv_find_stroll"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#ffcc00"
+            android:src="@drawable/find_foot"
+            android:contentDescription="@string/find"
+            android:padding="3dp" />
+
+        <ImageView
+            android:id="@+id/gone_stroll"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_gone"
+            android:contentDescription="@string/find"
+            android:layout_marginRight="5dp"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/tv_find_stroll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/iv_find_stroll"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:text="@string/stroll01"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/tv_find_stroll"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:text="@string/stroll02"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/gone_stroll"
+            android:background="@drawable/ic_launcher"
+            android:contentDescription="@string/find"
+            android:padding="3dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+     <!-- 店铺动态 dynamic -->
+    <RelativeLayout
+        android:id="@+id/rl_find_dynamic"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rl_find_stroll"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/find_attach_bg" >
+
+        <ImageView
+            android:id="@+id/iv_find_dynamic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#ffcc00"
+            android:contentDescription="@string/find"
+            android:padding="3dp" 
+            android:src="@drawable/find_spdt"
+            />
+
+        <ImageView
+            android:id="@+id/gone_stroll4"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_gone"
+            android:contentDescription="@string/find"
+            android:layout_marginRight="5dp"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/tv_find_dynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/iv_find_dynamic"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:text="@string/dynamic01"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/tv_find_dynamic"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:text="@string/dynamic02"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/gone_stroll4"
+            android:background="@drawable/ic_launcher"
+            android:contentDescription="@string/find"
+            android:padding="3dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+    
+     <!-- 扫啊扫 scan -->
+    <RelativeLayout
+        android:id="@+id/rl_find_scan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rl_find_dynamic"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/find_attach_bg" >
+
+        <ImageView
+            android:id="@+id/iv_find_scan"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#11aa33"
+            android:src="@drawable/sas"
+            android:contentDescription="@string/find"
+            android:padding="3dp" />
+
+        <ImageView
+            android:id="@+id/gone_scan"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_gone"
+            android:contentDescription="@string/find"
+            android:layout_marginRight="5dp"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/tv_find_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/iv_find_scan"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:text="@string/scan01"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/tv_find_scan"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:text="@string/scan02"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/gone_scan"
+            android:background="@drawable/ic_launcher"
+            android:contentDescription="@string/find"
+            android:padding="3dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+    
+     <!-- 拍照购物 phout_to_shopping -->
+    <RelativeLayout
+        android:id="@+id/rl_find_phout_to_shopping"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rl_find_scan"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/find_attach_bg" >
+
+        <ImageView
+            android:id="@+id/iv_find_phout_to_shopping"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#11aa33"
+            android:src="@drawable/camera"
+            android:contentDescription="@string/find"
+            android:padding="3dp" />
+
+        <ImageView
+            android:id="@+id/gone_phout_to_shopping"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_gone"
+            android:contentDescription="@string/find"
+            android:layout_marginRight="5dp"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/tv_find_phout_to_shopping"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/iv_find_phout_to_shopping"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:text="@string/phout_to_shopping1"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/tv_find_phout_to_shopping"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:text="@string/phout_to_shopping2"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/gone_phout_to_shopping"
+            android:background="@drawable/ic_launcher"
+            android:contentDescription="@string/find"
+            android:padding="3dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+    
+     <!-- 小冰 ice-->
+    <RelativeLayout
+        android:id="@+id/rl_find_ice"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rl_find_phout_to_shopping"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/find_attach_bg" >
+
+        <ImageView
+            android:id="@+id/iv_find_ice"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_launcher"
+            android:contentDescription="@string/find"
+            android:padding="3dp" />
+
+        <ImageView
+            android:id="@+id/gone_ice"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_gone"
+            android:contentDescription="@string/find"
+            android:layout_marginRight="5dp"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/tv_find_ice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/iv_find_ice"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:text="@string/ice01"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/tv_find_ice"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:text="@string/ice02"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/gone_ice"
+            android:background="@drawable/ic_launcher"
+            android:contentDescription="@string/find"
+            android:padding="3dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+    
+     <!-- 百宝箱 case -->
+    <RelativeLayout
+        android:id="@+id/rl_find_case"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rl_find_ice"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/find_attach_bg" >
+
+        <ImageView
+            android:id="@+id/iv_find_case"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_launcher"
+            android:contentDescription="@string/find"
+            android:padding="3dp" />
+
+        <ImageView
+            android:id="@+id/gone_case"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_gone"
+            android:contentDescription="@string/find"
+            android:layout_marginRight="5dp"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/tv_find_case"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/iv_find_case"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:text="@string/case01"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/tv_find_case"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:text="@string/case02"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/gone_case"
+            android:background="@drawable/ic_launcher"
+            android:contentDescription="@string/find"
+            android:padding="3dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</RelativeLayout>

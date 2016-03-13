@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/ic_item"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:scaleType="fitStart"
+            android:layout_weight="1"
+            android:contentDescription="@string/mine"
+            android:src="@drawable/setting" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:text="@string/mine"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitEnd"
+            android:layout_weight="1"
+            android:contentDescription="@string/mine"
+            android:src="@drawable/ic_launcher" />
+    </LinearLayout>
+    <!-- 个人信息模块 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="151dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/login_bg" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1sp"
+                android:layout_weight="1"
+                android:background="#22440000"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/concern_goods"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1sp"
+                android:layout_weight="1"
+                android:background="#22440000"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/concern_shops"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1sp"
+                android:layout_weight="1"
+                android:background="#22440000"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/history"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_mine_login"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@string/mine"
+            android:src="@drawable/login_head_default" />
+    </RelativeLayout>
+
+    <!-- 我的订单 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_item"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.95"
+            android:background="@drawable/ic_buy"
+            android:contentDescription="@string/my_orders"
+            android:scaleX="0.4"
+            android:scaleY="0.7" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical"
+            android:text="@string/my_orders"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical|right"
+            android:paddingLeft="10dp"
+            android:text="查看全部订单"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="0.28"
+            android:contentDescription="@string/my_orders"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_gone" />
+    </LinearLayout>
+    <!-- 订单操作 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/ic_item"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_wallet"
+            android:gravity="center_horizontal"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="代付款" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_truck"
+            android:gravity="center_horizontal"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="代收货" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_assessment"
+            android:gravity="center_horizontal"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="代评价" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_repair"
+            android:gravity="center_horizontal"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="返修/退货" />
+    </LinearLayout>
+	<!-- 我的钱包 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_item"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:scaleX="0.4"
+            android:scaleY="0.7"
+            android:background="@drawable/ic_wallet2"
+            android:contentDescription="@string/my_orders" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical"
+            android:text="我的钱包"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="京东福卡，小金库等"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="0.28"
+            android:contentDescription="@string/my_orders"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_gone" />
+    </LinearLayout>
+    
+    <!-- 余额 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/ic_item"
+        android:orientation="horizontal" 
+        >
+		<LinearLayout 
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:layout_weight="1"
+		    android:layout_gravity="center_vertical"
+		    >
+		    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="0.00" />
+		    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="账户余额" />
+		</LinearLayout>
+		<LinearLayout 
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:layout_weight="1"
+		    android:layout_gravity="center_vertical"
+		    >
+		    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="0" />
+		    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="优惠券" />
+		</LinearLayout>
+		<LinearLayout 
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:layout_weight="1"
+		    android:layout_gravity="center_vertical"
+		    >
+		    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="0" />
+		    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="京豆" />
+		</LinearLayout>
+		<LinearLayout 
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:layout_weight="1"
+		    android:layout_gravity="center_vertical"
+		    >
+		    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="0" />
+		    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="京东卡/E卡" />
+		</LinearLayout>
+        
+    </LinearLayout>
+    <!-- 服务 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_item"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.95"
+            android:background="@drawable/ic_feedback"
+            android:contentDescription="服务与反馈"
+            android:scaleX="0.4"
+            android:scaleY="0.7" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical"
+            android:text="意见反馈搬这儿了"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical|right"
+            android:paddingLeft="10dp"
+            android:text="查看全部订单"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="0.28"
+            android:contentDescription="@string/my_orders"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_gone" />
+    </LinearLayout>
+    <!-- 京东会员 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_item"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.95"
+            android:background="@drawable/ic_vip"
+            android:contentDescription="@string/my_orders"
+            android:scaleX="0.4"
+            android:scaleY="0.7" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical"
+            android:text="京东会员"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical|right"
+            android:paddingLeft="10dp"
+            android:text="查看全部订单"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="0.28"
+            android:contentDescription="会员俱乐部"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_gone" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jd_start_bg"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/jd_logo"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/jd_logo" />
+    
+    <!-- 进度条 -->
+    <ImageView
+        android:id="@+id/iv_jd_load_line"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:scaleType="matrix"
+        android:layout_below="@id/jd_logo"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/jd_load_line_bg" />
+    
+    <!-- 进度条中心点 -->
+    <ImageView
+        android:id="@+id/iv_jd_load_line_point"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:scaleType="matrix"
+        android:layout_below="@id/jd_logo"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/jd_load_point"
+         />
+    
+
+</RelativeLayout>

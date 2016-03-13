@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eedddd"
+    android:orientation="vertical" >
+	<!-- 登录按钮 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您可以在登录后同步电脑与手机购物车中的商品"
+            android:textSize="12sp" />
+    </LinearLayout>
+	<!-- 提示-购物车是空的 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:gravity="center_horizontal"
+        android:background="#ffffff">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/gwck"
+            android:layout_gravity="center_vertical"
+             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="购物车是空的您可以"
+            android:textSize="12sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="逛逛秒杀" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:background="#ffffff">
+
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:background="#ffffff">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/hsx"
+            android:layout_gravity="center_vertical"
+             />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="购物车是空的您可以"
+            android:gravity="center_horizontal"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/hsx"
+            android:layout_gravity="center_vertical"
+             />
+    </LinearLayout>
+
+        <GridView 
+   	    android:id="@+id/gv_unlogin_shopping_cart"
+   	    android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:numColumns="2"
+   	    ></GridView>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

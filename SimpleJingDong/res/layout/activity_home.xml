@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <!-- 活动专场按钮events  -->
+
+    <!-- 底部菜单栏 -->
+    <LinearLayout
+        android:id="@+id/ll_home_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_home_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/iv_home_home_selected" />
+
+        <ImageView
+            android:id="@+id/iv_home_classify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/iv_home_classify_default" />
+
+        <ImageView
+            android:id="@+id/iv_home_find"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/iv_home_find_default" />
+
+        <ImageView
+            android:id="@+id/iv_home_shopping_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/iv_home_shopping_cart_default" />
+
+        <ImageView
+            android:id="@+id/iv_home_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/iv_home_mine_default" />
+    </LinearLayout>
+    <!-- （body）商品展示fragment -->
+    <FrameLayout 
+        android:id="@+id/fl_home_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/ll_home_menu"
+        ></FrameLayout>
+        <!-- <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/ll_home_menu"
+        class="com.jingdong.ui.fragment.JDHomeTopFragment" /> -->
+
+    <Button
+        android:id="@+id/bt_home_events"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bt01" />
+    
+</RelativeLayout>
